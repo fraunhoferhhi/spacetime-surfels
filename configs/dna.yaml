@@ -1,0 +1,34 @@
+# training parameters
+iterations: 30000
+duration: 50
+resolution: 2
+test_views: [11, 25, 37, 57]
+eval: true
+gtisint8: 1 # no difference with 0
+# data_device: "cpu"
+
+# model parameters
+densify_grad_threshold: 0.0001 # better than 0.0003
+trbfslinit: -2.0
+movelr: 35 # better than 3.5
+
+lambda_surface: 0.3 # a bit better than 1.0
+
+# rendering parameters
+write_img: true
+write_video: true
+write_mesh: true
+poisson_depth: 9
+
+# Experiment 1
+# velocity_based_sampling: true
+# velocity_aggregation: "max"
+
+# Experiment 2
+# t_scale_loss: "softplus"
+# lambda_t_scale: 0.01
+
+# Experiment 3
+# use_flow: true
+# lambda_flow: 0.0001
+# duration: 30

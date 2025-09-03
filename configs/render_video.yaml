@@ -1,0 +1,39 @@
+DNA_crop:
+  '0008_01':
+    stop_at: 40
+    rotation_offset: 40
+    fps: 24
+  '0012_11':
+    stop_at: 40
+    rotation_offset: 50 
+    fps: 24
+  '0013_01':
+    stop_at: 85
+    rotation_offset: 50
+    fps: 24
+  '0013_03':
+    stop_at: 51
+    rotation_offset: 0
+    fps: 20
+  '0013_09':
+    stop_at: 51
+    rotation_offset: 0
+    fps: 24
+
+NHR:
+  sport_1_easymocap:
+    stop_at: 51
+    rotation_offset: 0
+    fps: 24
+  sport_2_easymocap:
+    stop_at: 51
+    rotation_offset: 0
+    fps: 24
+  sport_3_easymocap:
+    stop_at: 51
+    rotation_offset: 0
+    fps: 24
+  basketball_easymocap:
+    stop_at: 51
+    rotation_offset: 0
+    fps: 24

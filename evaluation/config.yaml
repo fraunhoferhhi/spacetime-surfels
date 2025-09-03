@@ -1,0 +1,51 @@
+### NOTES:
+### bg of rgb channels has to be 0/black, alpha channel is not used
+### bbox_dir assume NeuS2 file pattern, like: (\d{4})/frame_(\d{6})_gt\.png ; By default, it also assumes imgs to be evaluated (in_dir) are down-scaled original images (bbox_dir) by 2
+
+# # NeuS2
+# in_dir: /media/hbr/storage/Kivi/decai/dynamic/old/neus2/output/evaluation/basketball_easymocap/images
+# # bbox_dir: /media/hbr/storage/Kivi/decai/dynamic/3DGStream/dataset/DNA_crop/0013_09
+# gt_pattern: (\d{4})/frame_(\d{6})_gt\.png
+# pred_pattern: (\d{4})/frame_(\d{6})_pred\.png
+# metric_list: ['ssim', 'psnr', 'lpips_alex', 'lpips_vgg']
+# output_file: neus2/dna/basketball_easymocap.json
+
+# STG
+in_dir: /media/dc-04-vol03/Brianne/HBR/stg/output/dynamic/NHR_50frames_blackbg/basketball_easymocap
+# in_dir: /media/dc-04-vol03/Brianne/HBR/stg/output/dynamic/DNA_crop_50frames_blackbg/0008_01
+gt_pattern: \d+to\d+\/test\/ours_30000\/gt\/cam(\d{2})__t\d\.\d*\_gt.png
+pred_pattern: \d+to\d+\/test\/ours_30000\/renders\/cam(\d{2})_t\d\.\d*\.png
+metric_list: ['ssim', 'psnr', 'lpips_alex', 'lpips_vgg']
+output_file: stg/nhr_50frames_blackbg/basketball_easymocap.json
+# output_file: stg/blackbg/0008_01.json
+
+# # 4K4D
+# in_dir: /media/dc-04-vol03/Brianne/HBR/4K4D/data/result/4k4d_basketball_r4/RENDER
+# gt_pattern: frame\d{4}_camera(\d{4})_gt\.png
+# pred_pattern: frame\d{4}_camera(\d{4})\.png
+# metric_list: ['ssim', 'psnr', 'lpips_alex', 'lpips_vgg']
+# output_file: 4k4d/nhr/basketball.json
+
+# # 3dgstream
+# in_dir: /media/hbr/storage/Kivi/decai/dynamic/3dgstream_official/output/1301_eval_full_3dgstream/eval_imgs
+# bbox_dir: /media/hbr/storage/Kivi/decai/dynamic/3DGStream/dataset/DNA_crop/0013_01
+# gt_pattern: (\d{4})/frame_(\d{6})_gt\.png
+# pred_pattern: (\d{4})/frame_(\d{6})_pred\.png
+# metric_list: ['ssim', 'psnr', 'lpips_alex', 'lpips_vgg']
+# output_file: 3dgstream/1301_eval_full_3dgstream.json
+
+# # decai
+# in_dir: /media/hbr/storage/Kivi/decai/dynamic/3DGStream/output/dna_crop_r2_1301_eval_full_200_800_0p3_erodedflow_split/eval_imgs
+# bbox_dir: /media/hbr/storage/Kivi/decai/dynamic/3DGStream/dataset/DNA_crop/0013_01
+# gt_pattern: (\d{4})/frame_(\d{6})_gt\.png
+# pred_pattern: (\d{4})/frame_(\d{6})_pred\.png
+# metric_list: ['ssim', 'psnr', 'lpips_alex', 'lpips_vgg']
+# output_file: dna_crop_r2_1301_eval_full_200_800_0p3_erodedflow_split.json
+
+# # STS
+# in_dir: /media/dc-04-vol03/Brianne/thesis/spacetime-surfels/output/dynamic/DNA_crop/0012_11/basic_250123/render
+# gt_pattern: test\/it30000\/v(\d{2})\/gt_f\d{4}.png
+# pred_pattern: test\/it30000\/v(\d{2})\/pred_f\d{4}.png
+# metric_list: ['ssim', 'psnr', 'lpips_alex', 'lpips_vgg']
+# output_file: sts/DNA_crop/0012_11/basic_250123.json
+
