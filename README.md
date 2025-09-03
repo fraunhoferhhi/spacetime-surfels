@@ -1,11 +1,11 @@
 <h1 style="text-align: center;">Spacetime Surfels: Dynamic Surface Reconstruction from Multi-View Data using Gaussian Surfels</h1>
 
 <div align="center">
-  <img src="assets/results.gif" alt="Method Overview" width="60%">
+  <img src="assets/results.gif" alt="Method Overview" width="70%">
 </div>
 
 ## Overview
-This repository contains the implementation of Spacetime Surfels, a method developed for my master's thesis on dynamic surface reconstruction using Gaussian Splatting. The work addresses the critical gap between dynamic view synthesis and surface reconstruction within the 3D Gaussian Splatting framework, introducing a novel framework that enables efficient reconstruction of temporally consistent surface meshes from multi-view video sequences. The full thesis can be found in `./assets/thesis.pdf`. The code builds upon the [Gaussian Surfels](https://github.com/turandai/gaussian_surfels) code base and borrows some code related to the dynamic part from [SpacetimeGaussians](https://github.com/oppo-us-research/SpacetimeGaussians).
+This repository contains the implementation of Spacetime Surfels (STS), a method developed for my master's thesis on dynamic surface reconstruction using Gaussian Splatting. The work addresses the critical gap between dynamic view synthesis and surface reconstruction within the 3D Gaussian Splatting framework, introducing a novel framework that enables efficient reconstruction of temporally consistent surface meshes from multi-view video sequences. The full thesis can be found in `./assets/thesis.pdf`. The code builds upon the [Gaussian Surfels](https://github.com/turandai/gaussian_surfels) code base and borrows some code related to the dynamic part from [SpacetimeGaussians](https://github.com/oppo-us-research/SpacetimeGaussians).
 
 <div align="center">
   <img src="assets/method_diagram.png" alt="Method Overview" width="60%">
